@@ -177,8 +177,14 @@ const nbaTeams = [
 //   console.log();
 // }
 
-let team = nbaTeams.find(function getWarriors(team){
-  return (team.name === "Golden State Warriors");
-})
+// let team = nbaTeams.find(function getWarriors(team){
+//   return (team.name === "Golden State Warriors");
+// });
 
+//1. delete function keyword and the function name
+//2. on the right side of the parameter list add an arrow =>
+//3. if the function implementation (stuff inside curly braces) is only one line then you can remove the curly braces {}
+//  a) the return statement is then no longer needed
+//    b) the semicolon is not needed
+let team = nbaTeams.find((team) => team.name === "Golden State Warriors");
 console.log(team);
