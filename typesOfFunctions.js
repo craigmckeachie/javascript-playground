@@ -11,3 +11,8 @@ let multiply2 = function (x, y) {
 };
 
 console.log(multiply2(5, 5));
+
+//arrow function
+let multiply3 = (x, y) => x * y;
+
+console.log(multiply3(5, 3));
