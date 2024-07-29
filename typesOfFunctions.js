@@ -30,12 +30,6 @@ function greeter1(firstName) {
 
 greeter1("Emily");
 
+let greeter2 = firstName => console.log("Hi " + firstName);
 
-function greeter2(firstName) {
-  console.log("Hi " + firstName);
-}
-
-greeter1("James");
-
-
-
+greeter2("James");
