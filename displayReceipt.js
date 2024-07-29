@@ -1,6 +1,9 @@
 function displayReceipt(totalDue, amountPaid) {
   let changeDue = amountPaid - totalDue;
 
+  console.log(`Total: $${totalDue}`);
+  console.log(`Amount Paid: ${amountPaid}`);
+
   if (changeDue > 0) {
     console.log(`Change due ${changeDue}`);
   } else if (changeDue < 0) {
@@ -9,8 +12,13 @@ function displayReceipt(totalDue, amountPaid) {
   } else {
     console.log("No Change");
   }
+  console.log();
 }
 
 displayReceipt(300, 100);
 displayReceipt(100, 100);
 displayReceipt(100, 300);
+
+const number = 123456.789;
+
+console.log(new Intl.NumberFormat("en-US", { style: "currency", currency: "USA" }).format(number));
