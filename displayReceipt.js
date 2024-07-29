@@ -19,6 +19,3 @@ displayReceipt(300, 100);
 displayReceipt(100, 100);
 displayReceipt(100, 300);
 
-const number = 123456.789;
-
-console.log(new Intl.NumberFormat("en-US", { style: "currency", currency: "USA" }).format(number));
