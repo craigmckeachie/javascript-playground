@@ -11,6 +11,14 @@ let products = [
   { name: "Swedish Fish", price: 3.79 },
 ];
 
+//Example: Which candies don't contain peanuts (use the name of the candy since we don't have ingredients)?
+let safeCandies = products.filter(product => !product.name.toLowerCase().includes("peanut"));
+console.log(safeCandies);
+//or
+for (const safeCandy of safeCandies) {
+    console.log(safeCandy.name);
+}
+
 // Which candies cost less than $4.00?
 
 // Which candies have "M&M" in its name?
