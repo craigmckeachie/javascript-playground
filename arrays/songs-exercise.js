@@ -221,6 +221,7 @@ console.log(`There are ${numberOfPopSongs} pop songs in the list.`);
 // }
 // console.log(totalDuration);
 
+
 let totalDuration = songs.reduce(function (runningTotal, song) {
   return runningTotal + song.durationInSeconds;
 }, 0);
