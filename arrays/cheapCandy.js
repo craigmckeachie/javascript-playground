@@ -12,11 +12,11 @@ let products = [
 ];
 
 //Example: Which candies don't contain peanuts (use the name of the candy since we don't have ingredients)?
-let safeCandies = products.filter(product => !product.name.toLowerCase().includes("peanut"));
+let safeCandies = products.filter((product) => !product.name.toLowerCase().includes("peanut"));
 console.log(safeCandies);
 //or
 for (const safeCandy of safeCandies) {
-    console.log(safeCandy.name);
+  console.log(safeCandy.name);
 }
 
 // Which candies cost less than $4.00?
@@ -24,3 +24,8 @@ for (const safeCandy of safeCandies) {
 // Which candies have "M&M" in its name?
 
 // Do we carry "Swedish Fish"?
+
+//Create an array of strings that holds just the product name
+
+//after you get the array of product names working do the same thing using an array method if you didn't the first time
+//HINT: it will only be one line of code
