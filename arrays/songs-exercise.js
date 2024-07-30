@@ -203,7 +203,7 @@ console.log(song10.title);
 
 // 2. **Filter songs by genre**:
 //    - Use the `filter` method to create a new array of all songs in the "Pop" genre. How many songs are in this genre?
-let popSongs = songs.filter( (song) => song.genre.toLowerCase() === "pop" );
+let popSongs = songs.filter((song) => song.genre.toLowerCase() === "pop");
 let numberOfPopSongs = popSongs.length;
 console.log(`There are ${numberOfPopSongs} pop songs in the list.`);
 
@@ -212,6 +212,20 @@ console.log(`There are ${numberOfPopSongs} pop songs in the list.`);
 
 // 4. **Calculate the total duration**:
 //    - Use the `reduce` method to calculate the total duration of all songs in seconds. What is the total duration?
+// for (const object of array) {
+
+// }
+// let totalDuration = 0;
+// for (const song of songs) {
+//   totalDuration = totalDuration + song.durationInSeconds;
+// }
+// console.log(totalDuration);
+
+let totalDuration = songs.reduce(function (runningTotal, song) {
+  return runningTotal + song.durationInSeconds;
+}, 0);
+
+console.log(totalDuration);
 
 // 5. **Find songs by a specific artist**:
 //    - Use the `filter` method to find all songs by Olivia Rodrigo. What are the titles of these songs?
