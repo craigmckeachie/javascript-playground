@@ -181,13 +181,31 @@ const songs = [
   },
 ];
 
+let numbers = [1, 2, 3, 4];
+let students = ["James", "Eric"];
+
+// array = []
+// object = {}
+
 // Here are some questions that students can answer using array methods like `find`, `filter`, `map`, and `reduce` on the `songs` array:
 
 // 1. **Find a specific song**:
 //    - Use the `find` method to find the song with the `songID` of 10. What is the title of this song?
+// for (const song of songs) {
+//   if (song.songID === 10) {
+//     console.log(song.title);
+//     return;
+//   }
+// }
+
+let song10 = songs.find((song) => song.songID === 10);
+console.log(song10.title);
 
 // 2. **Filter songs by genre**:
 //    - Use the `filter` method to create a new array of all songs in the "Pop" genre. How many songs are in this genre?
+let popSongs = songs.filter( (song) => song.genre.toLowerCase() === "pop" );
+let numberOfPopSongs = popSongs.length;
+console.log(`There are ${numberOfPopSongs} pop songs in the list.`);
 
 // 3. **Map to create a new array of titles**:
 //    - Use the `map` method to create a new array that contains only the titles of all the songs. What are the titles?
@@ -212,5 +230,3 @@ const songs = [
 
 // 10. **Find the first song of a specific genre**:
 //     - Use the `find` method to find the first song in the "R&B" genre. What is the title of this song?
-
-

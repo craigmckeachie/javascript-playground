@@ -1,0 +1,5 @@
+
+- find
+- filter
+- map
+- reduce
