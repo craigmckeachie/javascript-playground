@@ -221,7 +221,6 @@ console.log(`There are ${numberOfPopSongs} pop songs in the list.`);
 // }
 // console.log(totalDuration);
 
-
 let totalDuration = songs.reduce(function (runningTotal, song) {
   return runningTotal + song.durationInSeconds;
 }, 0);
@@ -236,6 +235,10 @@ console.log(totalDuration);
 
 // 7. **Map to create an array of song information strings**:
 //    - Use the `map` method to create a new array of strings where each string is in the format "Title by Artist". What are the strings?
+let songTitleWithArtists = songs
+                            .filter((song) => song.genre.toLowerCase() === "pop")
+                            .map((song) => `${song.title}: ${song.artist}`);
+console.log(songTitleWithArtists);
 
 // 8. **Calculate the average duration**:
 //    - Use the `reduce` method to calculate the average duration of the songs in seconds. What is the average duration?
