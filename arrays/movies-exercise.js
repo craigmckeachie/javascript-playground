@@ -203,3 +203,6 @@ console.log(movies);
 //For example, https://www.imdb.com/title/tt10872600/
 
 //Create an array of strings with the urls from the last task
+
+//Bonus: What was the total budget for all action movies in 2021?
+//Bonus 2: Do that calculation using the array method reduce
