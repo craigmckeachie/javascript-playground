@@ -6,6 +6,7 @@ const movies = [
     director: "Jon Watts",
     genre: "Action",
     rating: 8.4,
+    budgetInMillions: 200,
   },
   {
     imdbID: "tt1160419",
@@ -14,6 +15,7 @@ const movies = [
     director: "Denis Villeneuve",
     genre: "Sci-Fi",
     rating: 8.1,
+    budgetInMillions: 165,
   },
   {
     imdbID: "tt1877830",
@@ -22,6 +24,7 @@ const movies = [
     director: "Matt Reeves",
     genre: "Action",
     rating: 8.3,
+    budgetInMillions: 185,
   },
   {
     imdbID: "tt2382320",
@@ -30,6 +33,7 @@ const movies = [
     director: "Cary Joji Fukunaga",
     genre: "Action",
     rating: 7.3,
+    budgetInMillions: 250,
   },
   {
     imdbID: "tt10838180",
@@ -38,6 +42,7 @@ const movies = [
     director: "Lana Wachowski",
     genre: "Sci-Fi",
     rating: 5.7,
+    budgetInMillions: 190,
   },
   {
     imdbID: "tt9376612",
@@ -46,6 +51,7 @@ const movies = [
     director: "Destin Daniel Cretton",
     genre: "Action",
     rating: 7.4,
+    budgetInMillions: 150,
   },
   {
     imdbID: "tt2953050",
@@ -54,6 +60,7 @@ const movies = [
     director: "Byron Howard, Jared Bush",
     genre: "Animation",
     rating: 7.9,
+    budgetInMillions: 120,
   },
   {
     imdbID: "tt8847712",
@@ -62,6 +69,7 @@ const movies = [
     director: "Wes Anderson",
     genre: "Comedy",
     rating: 7.2,
+    budgetInMillions: 25,
   },
   {
     imdbID: "tt11286314",
@@ -70,6 +78,7 @@ const movies = [
     director: "Adam McKay",
     genre: "Comedy",
     rating: 7.2,
+    budgetInMillions: 75,
   },
   {
     imdbID: "tt6334354",
@@ -78,6 +87,7 @@ const movies = [
     director: "James Gunn",
     genre: "Action",
     rating: 7.2,
+    budgetInMillions: 185,
   },
   {
     imdbID: "tt6264654",
@@ -86,6 +96,7 @@ const movies = [
     director: "Shawn Levy",
     genre: "Comedy",
     rating: 7.1,
+    budgetInMillions: 100,
   },
   {
     imdbID: "tt3228774",
@@ -94,6 +105,7 @@ const movies = [
     director: "Craig Gillespie",
     genre: "Comedy",
     rating: 7.4,
+    budgetInMillions: 100,
   },
   {
     imdbID: "tt9032400",
@@ -102,6 +114,7 @@ const movies = [
     director: "Chloé Zhao",
     genre: "Action",
     rating: 6.4,
+    budgetInMillions: 200,
   },
   {
     imdbID: "tt8332922",
@@ -110,6 +123,7 @@ const movies = [
     director: "John Krasinski",
     genre: "Horror",
     rating: 7.3,
+    budgetInMillions: 61,
   },
   {
     imdbID: "tt3480822",
@@ -118,6 +132,7 @@ const movies = [
     director: "Cate Shortland",
     genre: "Action",
     rating: 6.7,
+    budgetInMillions: 200,
   },
   {
     imdbID: "tt0870154",
@@ -126,6 +141,7 @@ const movies = [
     director: "Jaume Collet-Serra",
     genre: "Adventure",
     rating: 6.6,
+    budgetInMillions: 200,
   },
   {
     imdbID: "tt4513678",
@@ -134,6 +150,7 @@ const movies = [
     director: "Jason Reitman",
     genre: "Comedy",
     rating: 7.1,
+    budgetInMillions: 75,
   },
   {
     imdbID: "tt12801262",
@@ -142,6 +159,7 @@ const movies = [
     director: "Enrico Casarosa",
     genre: "Animation",
     rating: 7.5,
+    budgetInMillions: 50,
   },
   {
     imdbID: "tt1321510",
@@ -150,6 +168,7 @@ const movies = [
     director: "Jon M. Chu",
     genre: "Drama",
     rating: 7.3,
+    budgetInMillions: 55,
   },
   {
     imdbID: "tt11214590",
@@ -158,8 +177,11 @@ const movies = [
     director: "Ridley Scott",
     genre: "Drama",
     rating: 6.6,
+    budgetInMillions: 75,
   },
 ];
+
+console.log(movies);
 
 //Use array methods including find, filter, map, and forEach to complete each of the tasks below.
 
@@ -167,7 +189,7 @@ const movies = [
 
 // What are the action movies in the list?
 
-//What movies were horrible. Watchable will be defined as a rating of less than 7 .
+//What movies were bad. Bad will be defined as a rating of less than 7.
 
 //What movies were good. Good will be defined as a rating of 8 or higher?
 
