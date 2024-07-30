@@ -161,6 +161,8 @@ const movies = [
   },
 ];
 
+//Use array methods including find, filter, map, and forEach to complete each of the tasks below.
+
 //Print just the movie names
 
 // What are the action movies in the list?
