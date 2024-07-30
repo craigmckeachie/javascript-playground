@@ -8,15 +8,27 @@
 // }
 
 class Person {
-  firstName;
-  lastName;
+  first;
+  last;
+  age;
 
-  constructor(first, last) {
-    this.firstName = first;
-    this.lastName = last;
+  constructor(first, last, age) {
+    this.first = first;
+    this.last = last;
+    this.age = age;
   }
 }
 
-let person = new Person("Ron", "Swanson");
+let ron = new Person("Ron", "Swanson", 40);
+let andy = new Person("Andy", "Dwyer", 29);
+let ann = new Person("Ann", "Perkins", 27);
 
-console.log(person.firstName + " " + person.lastName);
+// let characters = [ron, andy, ann];
+let characters = [
+  new Person("Ron", "Swanson", 40),
+  new Person("Andy", "Dwyer", 29),
+  new Person("Ann", "Perkins", 27),
+  new Person("Ann", "Perkins", 27),
+];
+
+console.log(characters);
